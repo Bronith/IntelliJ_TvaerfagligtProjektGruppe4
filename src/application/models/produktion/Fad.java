@@ -2,21 +2,23 @@ package application.models.produktion;
 
 import application.models.produktion.decorator.Destillat;
 
+import java.util.Date;
+
 public class Fad {
-    private String navn;
-    private String nummer;
-    private String producent;
-    private String produktHistorik;
-    private String salgsHisorie;
+    private Date påfyldningsdato;
+    private String fadNr;
+    private FadType fadType;
+    private int fadStørrelse;
+    private int literPåfyldt;
+    private String signatur;
     private Destillat destillat;
 
-    public Fad(String navn, String nummer, String producent, String produktHistorik, String salgsHisorie) {
-        this.navn = navn;
-        this.nummer = nummer;
-        this.producent = producent;
-        this.produktHistorik = produktHistorik;
-        this.salgsHisorie = salgsHisorie;
+    public Fad(Date påfyldningsDato, String fadNr, FadType fadType, int fadStørrelse, int literPåfyldt, String signatur) {
+        this.påfyldningsdato = påfyldningsDato;
+        this.fadNr = fadNr;
+        this.fadType = fadType;
+        this.fadStørrelse = fadStørrelse;
+        this.literPåfyldt = literPåfyldt;
+        this.signatur = signatur;
     }
-
-
 }
