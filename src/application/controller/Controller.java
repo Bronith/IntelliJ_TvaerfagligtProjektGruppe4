@@ -9,8 +9,8 @@ import storage.Storage;
 import java.util.Date;
 
 public class Controller {
-    public Fad opretFad(Date påfyldningsdato, String fadNr, FadType fadType, int fadStørrelse, int literPåfyldt, String signatur) {
-        Fad fad = new Fad(påfyldningsdato, fadNr, fadType, fadStørrelse, literPåfyldt, signatur);
+    public Fad opretFad(Date påfyldningsdato, String fadNr, FadType fadType, int fadStørrelse, int literPåfyldt, String signatur, Destillat destillat) {
+        Fad fad = new Fad(påfyldningsdato, fadNr, fadType, fadStørrelse, literPåfyldt, signatur, destillat);
         Storage.addFad(fad);
         return fad;
     }
@@ -20,4 +20,6 @@ public class Controller {
         Storage.addFlaske(flaske);
         return flaske;
     }
+
+
 }
