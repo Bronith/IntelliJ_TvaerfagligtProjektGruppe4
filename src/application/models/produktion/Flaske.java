@@ -1,7 +1,5 @@
 package application.models.produktion;
 
-import application.models.produktion.decorator.Destillat;
-
 public class Flaske {
     private String navn;
     private String nummer;
