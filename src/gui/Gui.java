@@ -2,6 +2,7 @@ package gui;
 
 import gui.ProduktionsVindue.DestilatPane;
 import gui.ProduktionsVindue.ProduktionPane;
+import gui.lagerVindue.LagerPane;
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.scene.Scene;
@@ -21,6 +22,7 @@ public class Gui extends Application {
         initPrimaryStageContent(pane);
         tabPane.setTabClosingPolicy(TabPane.TabClosingPolicy.UNAVAILABLE);
         tabPane.getTabs().add(new Tab("Produktion", new ProduktionPane()));
+        tabPane.getTabs().add(new Tab("Lager", new LagerPane()));
         Scene scene = new Scene(tabPane, 300, 400);
         primaryStage.setScene(scene);
         primaryStage.show();

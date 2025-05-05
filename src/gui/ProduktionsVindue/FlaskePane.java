@@ -4,15 +4,14 @@ import javafx.geometry.Insets;
 import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 
-public class DestilatPane extends Stage {
+public class FlaskePane extends Stage {
     private final Stage stage = new Stage();
 
 
-    public void OpretDestillat() {
-        stage.setTitle("Opret Destillat");
+    public void OpretFlaske() {
+        stage.setTitle("Opret flaske");
         GridPane pane = new GridPane();
         initContent(pane);
         Scene scene = new Scene(pane, 400,400);
